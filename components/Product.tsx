@@ -1,4 +1,4 @@
-import { withRouter, RouterProps } from 'next/router';
+import { withRouter } from 'next/router';
 
 export interface IProduct {
   id: string;
@@ -11,7 +11,7 @@ export interface IProduct {
 }
 interface IProductProps {
   product: IProduct;
-  router: RouterProps;
+  router;
 }
 const Product = (props: IProductProps) => {
   return (
